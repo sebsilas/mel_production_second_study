@@ -272,7 +272,7 @@ function playSeq (note_list, hidePlay, id, sound) {
   pattern.start(0).loop = false;
   Tone.Transport.start();
  
-  Shiny.setInputValue("stimuli_pitch", note_list);
+  Shiny.setInputValue("stimuli_pitch", JSON.stringify(note_list));
 
 }
    

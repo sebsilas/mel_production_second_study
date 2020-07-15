@@ -1094,7 +1094,7 @@ play_melody_from_list_record_audio_page <- function(label= NULL, body = NULL, on
     
   ) # end main div
   
-  psychTestR::page(ui = ui, admin_ui = admin_ui, on_complete = on_complete, label = label, save_answer = TRUE, get_answer = function(input, state, ...) { get.timecode(input, state, getStimuli = TRUE, getRhythms =  TRUE) })
+  psychTestR::page(ui = ui, admin_ui = admin_ui, on_complete = on_complete, label = label, save_answer = TRUE, get_answer = function(input, state, ...) { get.timecode(input, state, getStimuli = TRUE, getRhythms =  FALSE) })
   
 }
 
